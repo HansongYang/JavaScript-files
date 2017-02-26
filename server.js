@@ -9,8 +9,8 @@ var board = {};
 
 // create http server
 var server = http.createServer(handleRequest); 
-server.listen(2406);
-console.log('Server listening on port 2406');
+server.listen(8888);
+console.log('Server listening on port 8888');
 
 
 function handleRequest(req, res) {
