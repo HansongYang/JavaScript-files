@@ -44,8 +44,7 @@ function handleRequest(req, res) {
 			});
 		}
 	}else if(urlObj.pathname === "/memory/card"){
-		if(req.method === "GET"){
-			var choices = urlObj.query.choice;
+		if(req.method === "GET"){			var choices = urlObj.query.choice;
 			var choice = choices.split("a");
 			var username = urlObj.query.username;
 			var player = users[username]; 
