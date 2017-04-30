@@ -1,8 +1,3 @@
-//Client-side interaction controller for Recipe Display page
-//Made for Comp2406 Winter 2017 - Assignment 4
-//Author: Andrew Runka
-
-
 $(document).ready(function(){
 	//register two buttons
 	$("#recipeViewButton").click(viewRecipe);
@@ -40,8 +35,6 @@ function getRecipeList(){
 	});
 }
 
-//Sends a request to the server for the currently selected recipe (in the recipeSelect dropdown)
-//If successfull will populate the other fields on the page with the recipe data
 function viewRecipe(){
 	
 	var name = $("#recipeSelect option:selected").val();  //get the value of the selected option from recipeSelect
@@ -63,11 +56,6 @@ function viewRecipe(){
 	});
 }
 
-
-//Sends a POST request to the server to add/update a recipe to the 
-//database. Note: contents are not checked for safety!
-//Note: recipe names are stored with underscores in place of spaces.
-//			but this is done transparently to the client.
 function sendRecipe(){
 	console.log("Sending new recipe");
 	
