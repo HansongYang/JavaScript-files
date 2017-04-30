@@ -1,0 +1,50 @@
+head
+	link(rel="stylesheet", type="text/css", href="/style.css")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="/recipePage.js")
+	script(src="/checkmark.js")
+	
+body
+	h1 Comp2406 Recipes Database!
+	
+	label Recipe:
+	br
+	
+	select#recipeSelect
+	br
+	
+	button#recipeViewButton View
+
+	br
+	label Name:
+	br
+	textarea#recipeName
+	br
+	
+	label Duration:
+	br
+	textarea#recipeDuration
+	br
+		
+	label Ingredients:
+	br
+	textarea(rows="10" cols ="90")#recipeIngredients
+	br
+		
+	label Steps:
+	br
+	textarea(rows="7" cols="90")#recipeDirections
+	br
+		
+	label Notes:
+	br
+	textarea(rows="5" cols="30")#recipeNotes
+	br
+		
+	button#recipeSubmitButton Submit
+	
+	div#confirmed
+		label.check &#10004
+
+	
+
