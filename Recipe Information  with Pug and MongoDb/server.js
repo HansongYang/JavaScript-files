@@ -167,11 +167,11 @@ app.get("/", function(req, res){
 			res.sendStatus(500);
         }
         else{
-			if(documents.length === 0){
-              res.render('login');
-            }
+	     if(documents.length === 0){
+             	res.render('login');
+           	 }
             else{
-				res.render('index');
+		res.render('index');
             }
           }
         });
